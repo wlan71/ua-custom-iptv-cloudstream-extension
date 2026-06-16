@@ -1,0 +1,22 @@
+[
+    {
+        "url": "https://raw.githubusercontent.com/wlan71/ua-custom-iptv-cloudstream-extension/builds/IPTVPlayer.cs3",
+        "status": 1,
+        "version": 15,
+        "name": "IPTVPlayer",
+        "internalName": "IPTVPlayer",
+        "authors": [
+            "wlan71"
+        ],
+        "description": "Ukrainian IPTV channels",
+        "fileSize": 27043,
+        "repositoryUrl": "https://github.com/wlan71/ua-custom-iptv-cloudstream-extension",
+        "language": "uk",
+        "tvTypes": [
+            "Live"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/wlan71/ua-custom-iptv-cloudstream-extension/master/IPTVPlayer/icon.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-764994fa0f4a8a6d7d94de9ce145767523bad4e5a1b8f13a47640ec208363955"
+    }
+]
