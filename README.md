@@ -22,7 +22,7 @@ A [CloudStream 3](https://github.com/recloudstream/cloudstream) plugin for watch
 2. Go to **Settings → Extensions → Add repository**
 3. Enter the repository URL:
    ```
-   cloudstreamrepo://raw.githubusercontent.com/wlan71/cloudstream-extensions/builds/repo.json
+   cloudstreamrepo://raw.githubusercontent.com/wlan71/ua-custom-iptv-cloudstream-extension/builds/repo.json
    ```
 4. Install the **Ukraine IPTV** plugin from the repository
 

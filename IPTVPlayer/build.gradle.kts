@@ -25,6 +25,6 @@ cloudstream {
         "Live",
     )
 
-    iconUrl = "https://raw.githubusercontent.com/wlan71/cloudstream-extensions/master/IPTVPlayer/icon.svg"
+    iconUrl = "https://raw.githubusercontent.com/wlan71/ua-custom-iptv-cloudstream-extension/master/IPTVPlayer/icon.svg"
 
 }

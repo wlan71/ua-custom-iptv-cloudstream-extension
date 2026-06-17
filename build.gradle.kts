@@ -48,7 +48,7 @@ subprojects {
     apply(plugin = "com.lagradost.cloudstream3.gradle")
 
     cloudstream {
-        setRepo(System.getenv("GITHUB_REPOSITORY") ?: "https://github.com/wlan71/cloudstream-extensions")
+        setRepo(System.getenv("GITHUB_REPOSITORY") ?: "https://github.com/wlan71/ua-custom-iptv-cloudstream-extension")
         authors = listOf("wlan71")
     }
 
