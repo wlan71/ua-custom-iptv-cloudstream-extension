@@ -1,0 +1,8 @@
+{
+  "name": "wlan71 Cloudstream Extensions",
+  "description": "Cloudstream Extensions by wlan71",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/wlan71/cloudstream-extensions/builds/plugins.json"
+  ]
+}
