@@ -57,7 +57,7 @@ GitHub Gist lets you host a single file privately with a direct download link.
 > **Note:** if you update the Gist with a new version of the file, the Raw URL will change.
 > Grab the new Raw URL and update it in the CloudStream plugin settings.
 
-To find your Gist later, go to **https://gist.github.com/wlan71** — all your Gists are listed there.
+To find your Gist later, go to **https://gist.github.com/name** — all your Gists are listed there.
 
 ## How to use in CloudStream
 
