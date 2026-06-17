@@ -1,31 +1,71 @@
-# Cloudstream Extensions by wlan71
+# Ukraine IPTV — CloudStream Plugin
+
+A [CloudStream 3](https://github.com/recloudstream/cloudstream) plugin for watching IPTV channels via a custom M3U/M3U8 playlist.
 
 ---
 
-## 🧰 Tools & Technologies
+## Features
 
-<p align="left">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=kotlin,androidstudio,gradle,github,githubactions&theme=light&perline=5" />
-  </a>
-</p>
-
----
-
-## 📄 License
-
-[![GNU GPLv3 Image](https://www.gnu.org/graphics/gplv3-127x51.png)](http://www.gnu.org/licenses/gpl-3.0.en.html)
-
-These extensions are **free software**: you can use, study, share, and modify them as you wish.
-
-They are distributed under the terms of the [GNU General Public License](https://www.gnu.org/licenses/gpl.html) version 3 or later, published by the Free Software Foundation.
+- Loads channels from any M3U/M3U8 playlist URL
+- Channels grouped by categories from the playlist
+- Channel logos resolved automatically from the [iptv-org](https://github.com/iptv-org/iptv) logo database
+- DRM stream support (Widevine)
+- Chromecast support
+- Search across all channels
+- Configurable playlist URL via plugin settings
 
 ---
 
-## ⚖️ DMCA Disclaimer
+## Installation
 
-These extensions function similarly to a standard web browser by fetching video files from the internet.
+1. Open CloudStream 3
+2. Go to **Settings → Extensions → Add repository**
+3. Enter the repository URL:
+   ```
+   cloudstreamrepo://raw.githubusercontent.com/wlan71/cloudstream-extensions/builds/repo.json
+   ```
+4. Install the **Ukraine IPTV** plugin from the repository
 
-- **No content is hosted by this repository or the Cloudstream 3 application.**
-- Any content accessed is hosted by third-party websites.
-- Users are solely responsible for their usage and must comply with their local laws.
+---
+
+## Configuration
+
+1. Open the plugin settings (long-press the plugin or use the gear icon)
+2. Paste your M3U/M3U8 playlist URL
+3. Save and restart the app
+
+If no URL is set, the plugin falls back to the public [iptv-org Ukraine playlist](https://iptv-org.github.io/iptv/countries/ua.m3u).
+
+---
+
+## Playlist with logos
+
+The included Python script [`iptv_playlist/enrich_playlist.py`](iptv_playlist/enrich_playlist.py) enriches any M3U, M3U8, or nStream XML playlist with channel logos from the iptv-org database.
+
+```bash
+python3 iptv_playlist/enrich_playlist.py ~/Downloads/playlist.m3u8
+# Output: ~/Downloads/playlist+logo.m3u8
+```
+
+See [`iptv_playlist/README.md`](iptv_playlist/README.md) for full usage instructions.
+
+---
+
+## Requirements
+
+- CloudStream 3 (latest version)
+- A valid M3U/M3U8 playlist URL
+
+---
+
+## License
+
+[![GNU GPLv3](https://www.gnu.org/graphics/gplv3-127x51.png)](http://www.gnu.org/licenses/gpl-3.0.en.html)
+
+Distributed under the [GNU General Public License v3](https://www.gnu.org/licenses/gpl.html).
+
+---
+
+## Disclaimer
+
+This plugin does not host any content. It loads streams from URLs provided in your playlist. Users are solely responsible for the content they access and must comply with their local laws.
