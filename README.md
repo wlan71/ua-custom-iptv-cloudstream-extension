@@ -36,6 +36,11 @@ A [CloudStream 3](https://github.com/recloudstream/cloudstream) plugin for watch
 
 If no URL is set, the plugin falls back to the public [iptv-org Ukraine playlist](https://iptv-org.github.io/iptv/countries/ua.m3u).
 
+**Playlist options:**
+
+- **Provider playlist** — paste the M3U/M3U8 URL from your IPTV provider directly. Channels and categories will load as-is, but logos may be missing if the provider does not include them.
+- **Enriched playlist** — use the included [Python script](iptv_playlist/README.md) to add logos to your provider's playlist on your PC, then host the result privately (e.g. as a secret GitHub Gist) and paste that URL here. This gives you full channel logos without relying on the provider.
+
 ---
 
 ## Playlist with logos
